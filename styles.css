@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+    color: white;
+} 
+.logo-div{
+    display: block;
+    position: absolute;
+    top: 55px;
+    left: 30px;
+    margin-left: 45px;
+
+}
+
+/* .illustration-mockups{
+    display: inline;
+    position: absolute;
+    top: 44px;
+    left: 44px;
+} */
+
+body{
+    background-image: url("images/bg-desktop.svg"); /* The image used */
+    background-color: #613ee0; /* Used if the image is unavailable */
+    height: 850px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    /* display: inline-block; */
+}
+                /* main section */
+h1{
+    font-weight: 700;
+    font-size:  38px;
+    line-height:40px;
+    margin-bottom: 30px;
+}
+h3{
+    font-weight: 400;
+  
+    line-height:25px;
+    font-size: 20px;
+}
+.main-section{
+    display: flex;
+    flex-direction: row;
+    margin-top: 15%;
+    margin-left: 80px;
+    
+}
+
+
+
+
+.illustration-mockups-div{
+    flex-shrink:0.5; 
+}
+.illustration-mockups{
+    padding-top: 6%;
+    width: 100%;
+}
+
+.register-div{
+    flex-shrink:1; 
+    margin-left: 5%;
+    padding-top: 4.5%;
+}
+.register-button {
+    margin-top: 30px;
+    margin-left: 4px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 40px;
+    height: 50px;
+    line-height: 50px;
+    color: #613ee0;;
+
+    width: 220px;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 0px;
+    background-color: #FBFBFB;
+
+
+    border: solid #ffff 0px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+.register-button:hover {
+    background: #EC83F5;
+    border: solid #EC83F5 1px;
+    color: white;
+
+ }
+.contact-us{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 70px;
+ }
+
+.social-media-links{
+    width:fit-content;
+    text-align: center;
+    background-color: #613ee0;;
+    
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.social-media-links:hover{
+    color: #d530e4;
+}
+
+
+footer{
+    position: relative;
+    top: 12%;
+    /* left: auto;
+    right: auto; */
+    margin: 0 auto 0 auto ;
+    width: fit-content;
+}
+
+
+
+
+.attribution-links{
+    
+    text-align: center;
+    background-color: #613ee0;
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 15px;
+    background:none;
+    padding: 0;
+    margin: 0;
+   
+}
+.attribution-links:hover{
+    color: #d530e4;
+    
+}
+
+
+
+
+
+/* to make it look good in desktop and tablet size  */
+@media (max-width:1100px) {
+    .main-section{
+        margin-top: 180px; 
+    }
+}
+@media (min-width:1500px) {
+    .main-section{
+        margin-top: 180px; 
+    }
+}
+/* to make it look good on mobile */
+@media (max-width:1000px) {
+
+    body{
+        background-image: url("images/bg-mobile.svg");
+        height: 350px;
+        margin: 0 auto 0 auto ; 
+
+    }
+    h1{
+        font-weight: 550;
+    }
+    h3{
+        width: 90%;
+        margin: 0  auto 0 auto; 
+    }
+    .main-section{
+        flex-direction: column;
+       /* margin: 150px 80px 0 80px ;  TRBL */
+        margin: 0  auto 0 auto; 
+        width: 480px;
+        text-align: center;
+        
+        
+    }
+    .illustration-mockups-div{
+        padding-top: 0;
+        margin-top: 150px;
+        
+    
+    }
+    .illustration-mockups{
+        padding-top: 0;
+        margin-top: 0;
+        margin-bottom: 50px;
+        width: 350px;
+    
+    }
+    .register-div{
+        margin: 0 auto 0 auto 0; 
+        padding-top: 4.5%;
+    }
+    .logo-div{
+        margin-left: 5%;
+        top: 50px;
+    }
+    .logo{
+        width: 200px;
+    }
+    .register-button {
+        width: 250px;
+        height: 50px;
+    }
+    .contact-us{
+        /* justify-content: center; */
+        padding-bottom: 50px;
+        width: 300px;
+        margin: 60px  auto 0 auto ;   
+        padding-left: 50px;   
+        
+    }
+    footer{
+        position: static;
+  
+        padding: 0px 0 20px 30px;
+        /* left: auto;
+        right: auto; */
+        margin: 0 auto 0 auto ;
+    }
+
+    
+
+}
+
